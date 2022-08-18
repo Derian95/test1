@@ -1,0 +1,104 @@
+
+@font-face {
+  font-family: Inter;
+  src: url('../fonts//inter/Inter-Regular.otf');
+}
+body{
+  width: 100%;
+ height: 100vh;
+display: flex;
+
+}
+
+
+*{
+  padding: 0;margin: 0;
+
+font-family: Inter;
+}
+
+
+/*SIDEBAR*/
+.sidebar_container{
+height: 100vh;
+width: 250px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #1A3C64;
+}
+
+.sidebar_container h1{
+  color: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar_container ul{
+  width: 100%;
+}
+.sidebar_container li{
+  height: 30px;
+  margin-top: 1.5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all .8s;
+  }
+
+.sidebar_container li:hover{
+  background-color: black;
+  cursor: pointer;
+}
+.sidebar_container a{
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+
+
+}
+
+/*MAIN*/
+
+main{
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 1%, rgba(230,230,230,1) 100%, rgba(255,255,255,1) 100%);
+  width: 100%;
+}
+
+main .header{
+  width: 100%;
+  background-color:#1A3C64 ;
+  height: 80px;
+  color: white;
+}
+
+main img{
+  width: 100%;
+  height: 500px;
+}
+
+.preloader {
+  width: 70px;
+  height: 70px;
+  border: 10px solid #eee;
+  border-top: 10px solid #666;
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
